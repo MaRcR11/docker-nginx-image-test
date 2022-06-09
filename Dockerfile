@@ -1,5 +1,5 @@
 FROM nginx:latest
 
-COPY src/html /usr/share/nginx/html
-
-# CMD [ "nginx", "-g", "daemon off" ] 
+CMD ["npm", "create", "vite@latest", "."]
+CMD ["npm", "install"]
+CMD ["npm", "run", "dev"]
